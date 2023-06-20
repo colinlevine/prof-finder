@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMU ratemyprofessors.com by course</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>TAMU ratemyprofessors.com by course</h2>
+
+    <!-- method="post" is VERY important here -->
+    <!-- when we click 'submit', this form automatically makes a -->
+    <!-- HTTP POST request to the backend using the same endpoint -->
+    <!-- with the input elements inside the form -->
+    <form method="post">    
+
+        <!-- giving our input elements a name is VERY important -->
+        <!-- it helps identify the input value later in the backend -->
+        Enter the department name (currently only works for "CSCE" and "MATH"): <input name="department"> <br><br>
+
+        Enter your course number: <input name="course"> <br><br>
+
+        <!-- Clicking this submit button causes a HTTP POST request -->
+        <!-- to the same endpoint eg. http://localhost:5000/ -->
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <p style="font-size: .75em">Disclaimer: This data may not be 100% accurate or current.</p>
+    <p style="font-size: .75em">Only works for current TAMU professors that have been reviewed on ratemyprofessors.com</p>
+    <p style="font-size: .65em">CSCE updated as of 6-12-2023</p>
+    <p style="font-size: .65em">MATH updated as of 6-14-2023</p>
+    <a href="/bug-report">Report a bug</a>
+</body>
+</html>
